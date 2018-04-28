@@ -1,0 +1,48 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+/*
+ *= require jquery.lightbox-0.5
+ *= require carousel
+ */
+
+li {
+  list-style: none;
+}
+//navbar
+.navbar {
+  height: 75px;
+  background-image: url("https://images.unsplash.com/photo-1521798864191-bb5fb5a9da66?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a87e9067b97f2380b44a3f7b9e43255b&auto=format&fit=crop&w=800&q=60");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: .5;
+}
+
+
+//skill
+
+#header {
+  text-align: left;
+  padding-left: 50px;
+  padding-bottom: 12px;
+  background-image: url("https://images.unsplash.com/photo-1493408878302-bb48127906bc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6506a8e8a6c7bdd4dd77906b294c3b95&auto=format&fit=crop&w=800&q=60");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  text-shadow: black 2px 2px 2px;
+  background-repeat: no-repeat;
+  height: 290px;
+  margin-top: -150px;
+}
+
+#register {
+  text-align: center;
+}
+
+#skills_list {
+  text-align: center;
+}
