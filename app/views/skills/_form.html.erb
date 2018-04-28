@@ -1,0 +1,17 @@
+<% render "layouts/errors", :object => @skill %>
+
+<%= form_for @skill, html: { multipart: true } do |f| %>
+  <%= f.label :skill_name %>
+  <%= f.text_field :skill_name %>
+  <br>
+  <%= f.label :skill_description %>
+  <%= f.text_area :skill_description %>
+  <br>
+  <%= f.label :image %>
+  <%= f.file_field :image %>
+  <br>
+  <%= f.submit "Add skill", class: "btn btn-info" %>
+<% end %>
+<br>
+
+<%= link_to "Return home", skills_path %>

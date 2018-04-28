@@ -1,0 +1,8 @@
+<h1><%= @project.project_name %></h1>
+<h1><%= @project.project_link %></h1>
+<h1><%= image_tag @project.image.url(:medium) %></h1>
+
+<p><%= link_to "Return to projects", projects_path %></p>
+
+<p><%= link_to "New project", new_project_path %></p>
+<p><%= link_to "Edit project", edit_project_path %></p>

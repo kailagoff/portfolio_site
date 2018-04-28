@@ -1,0 +1,17 @@
+<% render "layouts/errors", :object => @photo %>
+
+<%= form_for @photo, html: { multipart: true } do |f| %>
+  <%= f.label :photo_name %>
+  <%= f.text_field :photo_name %>
+  <br>
+  <%= f.label :photo_description %>
+  <%= f.text_area :photo_description %>
+  <br>
+  <%= f.label :image %>
+  <%= f.file_field :image %>
+  <br>
+  <%= f.submit "Add Photo", class: "btn btn-info" %>
+<% end %>
+<br>
+
+<%= link_to "Return home", root_path %>

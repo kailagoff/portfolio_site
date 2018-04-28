@@ -1,0 +1,16 @@
+<div id="new-blog">
+  <h1>New Blog Post</h1>
+
+  <%= form_for @post, :url => posts_path, :html => { :multipart => true} do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <br><br>
+    <%= f.label :post_content %>
+    <%= f.text_area :post_content %>
+    <br>
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+    <br>
+    <%= f.submit "Add post", class: "btn btn-info" %>
+  <% end %>
+</div>

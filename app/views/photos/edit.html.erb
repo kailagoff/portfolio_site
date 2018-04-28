@@ -1,0 +1,7 @@
+<h1>Edit photo</h1>
+
+<%= render 'photos/form' %>
+
+<%= link_to 'Delete this photo', photo_path(@photo),
+:data => {:confirm => "Are you sure you want to delete this photo?",
+:method => "delete"} %>

@@ -1,0 +1,8 @@
+<h1><%= @photo.photo_name %></h1>
+<h1><%= @photo.photo_description %></h1>
+<h1><%= image_tag @photo.image.url(:large) %></h1>
+
+<p><%= link_to "Return to photos", photos_path %></p>
+
+<p><%= link_to "New photo", new_photo_path %></p>
+<p><%= link_to "Edit photo", edit_photo_path %></p>
