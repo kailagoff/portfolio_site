@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_04_28_021103) do
+ActiveRecord::Schema.define(version: 2018_04_28_025920) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,10 @@ ActiveRecord::Schema.define(version: 2018_04_28_021103) do
     t.string "photo_description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "image_file_name"
+    t.string "image_content_type"
+    t.integer "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   create_table "posts", force: :cascade do |t|
@@ -35,6 +39,10 @@ ActiveRecord::Schema.define(version: 2018_04_28_021103) do
     t.string "post_content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "image_file_name"
+    t.string "image_content_type"
+    t.integer "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   create_table "projects", force: :cascade do |t|
@@ -42,6 +50,10 @@ ActiveRecord::Schema.define(version: 2018_04_28_021103) do
     t.string "project_link"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "image_file_name"
+    t.string "image_content_type"
+    t.integer "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   create_table "skills", force: :cascade do |t|
@@ -49,6 +61,10 @@ ActiveRecord::Schema.define(version: 2018_04_28_021103) do
     t.string "skill_description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "image_file_name"
+    t.string "image_content_type"
+    t.integer "image_file_size"
+    t.datetime "image_updated_at"
   end
 
 end
