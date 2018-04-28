@@ -4,6 +4,9 @@
  *= require jquery.lightbox-0.5
  *= require carousel
  */
+ /*
+ *= require rails_bootstrap_forms
+ */
 
 li {
   list-style: none;
@@ -45,4 +48,9 @@ li {
 
 #skills_list {
   text-align: center;
+}
+
+.forms {
+  text-align: center;
+  align-items: center;
 }
