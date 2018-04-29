@@ -4,5 +4,7 @@
      <h5><%= link_to skill.skill_name, skill_path(skill) %></h5>
      <%= link_to image_tag(skill.image.url(:thumb)), skill_path(skill) %>
    </div>
+   <br><br><br><br><br><br><br>
  </div>
 <% end %>
+<p><%= link_to "New skill", new_skill_path %></p>

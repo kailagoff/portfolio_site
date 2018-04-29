@@ -1,14 +1,11 @@
 <% render "layouts/errors", :object => @project %>
 
 <div class="forms">
-  <%= form_for @project, html: { multipart: true } do |f| %>
-    <%= f.label :project_name %>
+  <%= bootstrap_form_for @project, html: { multipart: true } do |f| %>
     <%= f.text_field :project_name %>
     <br>
-    <%= f.label :project_link %>
     <%= f.text_area :project_link %>
     <br>
-    <%= f.label :image %>
     <%= f.file_field :image %>
     <br>
     <%= f.submit "Add project", class: "btn btn-info" %>
