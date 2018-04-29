@@ -23,8 +23,8 @@
 					<li><%= link_to 'My Account', edit_user_registration_path , :style=> 'color:darkslategrey;' %></li>
 					<li><%= link_to "Sign out", destroy_user_session_path, :style=> 'color:darkslategrey;', :method => :delete %></li>
 				<% else %>
-					<li><%= link_to 'Admin Login', new_user_session_path, :style=> 'color:darkslategrey;' %></li>
-					<li><%= link_to 'Admin Register', new_user_registration_path, :style=> 'color:darkslategrey;'%></li>
+					<li><%= link_to 'Login', new_user_session_path, :style=> 'color:darkslategrey;' %></li>
+					<li><%= link_to 'Register', new_user_registration_path, :style=> 'color:darkslategrey;'%></li>
 				<% end %>
 			</ul>
 		</div><!--/.nav-collapse -->
