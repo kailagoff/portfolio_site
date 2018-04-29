@@ -7,6 +7,14 @@
  /*
  *= require rails_bootstrap_forms
  */
+body {
+  background-image: url("https://i.stack.imgur.com/HCfU2.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 li {
   list-style: none;
@@ -20,7 +28,7 @@ li {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  opacity: .5;
+  opacity: .7;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -31,6 +39,7 @@ li {
   text-align: left;
   padding-left: 50px;
   background-image: url("https://images.unsplash.com/photo-1510267519236-48581949f65a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=10c553182f4cc69fb98bcbf02f54d28b&auto=format&fit=crop&w=1350&q=80");
+  background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
