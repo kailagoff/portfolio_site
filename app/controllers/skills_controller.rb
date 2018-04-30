@@ -1,7 +1,7 @@
 class SkillsController < ApplicationController
 
   def index
-    @skills = Skill.order(:skill_name)
+    @skills = Skill.all
   end
 
   def new

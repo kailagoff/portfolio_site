@@ -31,6 +31,8 @@
   <%= image_tag("kgicondraft.jpg", :size => "150x87") %>
 </div>
 
-<% if current_user %>
-   <p><%= link_to "ADMIN DASHBOARD", '/admin' %></p>
- <% end %>
+<div id="admin-dash">
+  <% if current_user %>
+     <p><%= link_to "ADMIN DASHBOARD", '/admin' %></p>
+   <% end %>
+</div>
