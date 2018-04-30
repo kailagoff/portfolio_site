@@ -1,12 +1,11 @@
-<div class="well">
-  <h5>Photos:</h5>
-  <ul>
-    <% @photos.each do |photo| %>
-       <li><%= link_to image_tag(photo.image.url(:large)), photo_path(photo) %></li>
-    <% end %>
-  </ul>
+<div id="wrapper">
+  <% @photos.each do |photo| %>
+     <%= link_to image_tag(photo.image.url(:large)), photo_path(photo) %>
+  <% end %>
 </div>
 
+
+
 <% if current_user %>
-  <p><%= link_to "New photo", new_photo_path %></p>
+  <p><%= link_to "New photo", new_photo_path, class: "btn btn-info" %></p>
 <% end %>

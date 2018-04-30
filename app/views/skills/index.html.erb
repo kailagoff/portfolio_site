@@ -1,5 +1,5 @@
 <% @skills.each do |skill| %>
- <div class="col-md-4">
+ <div class="col-md-3">
    <div id="skills_list">
      <h5><%= link_to skill.skill_name, skill_path(skill) %></h5>
      <%= link_to image_tag(skill.image.url(:thumb)), skill_path(skill) %>
@@ -9,5 +9,5 @@
 <% end %>
 
 <% if current_user %>
-  <%= link_to "New skill", new_skill_path %></p>
+  <%= link_to "New skill", new_skill_path, class: "btn btn-info" %></p>
 <% end %>
