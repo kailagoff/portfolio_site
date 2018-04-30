@@ -38,7 +38,6 @@ _The website is divided into several different sections. There is an About Me se
 * _In the following line enter:_ ```$rake db:create```
 * _In the following line enter:_ ```$rake db:migrate```
 * _In the following line enter:_ ```$rake db:test:prepare```
-* _In the following line enter:_ ```$rake db:seed```
 
 ## Setup/Installation Requirements
 

@@ -1,6 +1,14 @@
-<%= image_tag @post.image.url(:large) %>
-<h3><%= @post.title %></h3>
-<p><%= @post.post_content %></p>
+<div id="blog-show">
+  <div class="row">
+    <div class="col-md-4">
+      <%= image_tag @post.image.url(:large) %>
+    </div>
+    <div class="col-md-8">
+      <h3><%= @post.title %></h3>
+      <p><%= @post.post_content %></p>
+    </div>
+  </div>
+</div>
 
 <% if current_user %>
  <h4><%= link_to "Add a comment", new_post_comment_path(@post), remote: true %></h4>

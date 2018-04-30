@@ -1,8 +1,13 @@
 <% if @posts.any? %>
-  <% @posts.each do |post| %>
-    <h3><%= link_to post.title, post_path(post) %></h3>
-  <% end %>
+<% @posts.each do |post| %>
+  <div class="col-md-4">
+    <div id="posts_list">
+      <h3><%= image_tag(post.image.url(:large)) %><%= link_to post.title, post_path(post) %></h3>
+    </div>
+  </div>
 <% end %>
+<% end %>
+
 
 <% if current_user %>
   <%= link_to "New post", new_post_path %>
