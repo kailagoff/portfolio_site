@@ -295,7 +295,6 @@ DEPENDENCIES
   bootsnap (>= 1.1.0)
   bootstrap-sass (~> 3.3.7)
   bootstrap_form!
-  bundler (~> 1.16.1)
   byebug
   coffee-rails (~> 4.2)
   devise (~> 4.4.3)
