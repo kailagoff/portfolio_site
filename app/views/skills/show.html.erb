@@ -1,7 +1,7 @@
 <div class="container" id="skill-show">
-  <h1><%= @skill.skill_name %></h1>
-  <h1><%= @skill.skill_description %></h1>
   <h1><%= image_tag @skill.image.url(:thumb) %></h1>
+  <h1><%= @skill.skill_name %></h1>
+  <h4><%= @skill.skill_description %></h4>
 
 
   <p><%= link_to "Return to skills", skills_path, class: "btn btn-info" %></p>

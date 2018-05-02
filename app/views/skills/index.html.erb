@@ -1,6 +1,6 @@
-<div class="container">  
+<div class="container">
   <% @skills.each do |skill| %>
-   <div class="col-md-3">
+   <div class="col-md-4">
      <div id="skills_list">
        <h5><%= link_to skill.skill_name, skill_path(skill) %></h5>
        <%= link_to image_tag(skill.image.url(:thumb)), skill_path(skill) %>
