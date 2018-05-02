@@ -10,6 +10,10 @@ class ProjectsController < ApplicationController
 
   def show
     @project = Project.find(params[:id])
+    respond_to do |format|
+      format.html { redirect_to root_path }
+      format.js { render 'projects/show.js.erb'}
+    end
   end
 
   def create
