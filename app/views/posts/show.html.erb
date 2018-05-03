@@ -1,10 +1,10 @@
 
 <div id="blog-show">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-5">
       <%= image_tag @post.image.url(:large) %>
     </div>
-    <div class="col-md-8">
+    <div class="col-md-7" id="post_content">
       <h3><%= @post.title %></h3>
       <p><%= @post.post_content %></p>
     </div>
