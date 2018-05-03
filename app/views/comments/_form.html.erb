@@ -1,0 +1,9 @@
+<%= render "layouts/errors", :object => @comment %>
+
+<div class="forms">
+ <%= bootstrap_form_for [@post, @comment], remote: true do |f| %>
+   <%= f.text_area :author %>
+   <%= f.text_area :comment_content %>
+   <%= f.submit "Add comment", class: "btn btn-info" %>
+ <% end %>
+</div>

@@ -5,10 +5,15 @@ class PostsController < ApplicationController
   end
 
   def new
-    @post = Post.new
+    if current_user
+       @post = Post.new
+     else
+       redirect_to new_user_session_path
+     end
   end
 
   def show
+    @posts = Post.all
     @post = Post.find(params[:id])
   end
 

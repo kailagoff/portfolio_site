@@ -1,0 +1,4 @@
+$('form').remove();
+$('#new_comment_link_<%= @post.id %>').show();
+$('#comments').append('<p><%= @comment.comment_content %></p>')
+$('#post_comments').append('<li><%= @comment.comment_content %></li>')
