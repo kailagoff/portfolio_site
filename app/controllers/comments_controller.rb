@@ -8,10 +8,9 @@ class CommentsController < ApplicationController
   def create
     @post = Post.find(params[:post_id])
     @comment = @post.comments.new(comment_params)
-    @comment.comment_author = current_user.username
     if @comment.save
       respond_to do |format|
-        format.html { redirect_to post_url(@post) }
+        format.html { redirect_to post_path(@post) }
         format.js
       end
     end
