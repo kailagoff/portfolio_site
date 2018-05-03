@@ -11,8 +11,8 @@ class ProjectsController < ApplicationController
   def show
     @project = Project.find(params[:id])
     respond_to do |format|
-      format.html { redirect_to root_path }
-      format.js { render 'projects/show.js.erb'}
+      format.html { redirect_to project_path }
+      format.js
     end
   end
 
