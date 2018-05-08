@@ -1,6 +1,6 @@
 <div id="photo-show">
   <h1><%= @photo.photo_name %></h1>
-  <h1><%= @photo.photo_description %></h1>
+  <h4><%= @photo.photo_description %></h4>
   <h1><%= image_tag @photo.image.url(:large) %></h1>
 
   <p><%= link_to "Return to photos", photos_path %></p>
