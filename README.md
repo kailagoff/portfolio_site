@@ -11,7 +11,7 @@ _This is my personal portfolio website. It was built with Ruby on Rails. I used 
 
 _The website is divided into several different sections. There is an About Me section that displays my story and current interests. There is a skills and project section that is meant to showcase my current coding abilities. There is also a section that displays some of my recent photography as a way of showing my outside interests. I have also included a blog which I hope to populate with relevant and current posts relating to the tech industry._
 
-### Portfolio site that will include
+### Portfolio site that includes
 
   * About me section with current interests
   * Skills and Projects
@@ -21,16 +21,6 @@ _The website is divided into several different sections. There is an About Me se
   * Devise for Authentication
   * Paperclip for image upload
   * ActiveRecord Database
-
-##### Personal Strengths
-  * Always searching for personal and professional growth
-  * Analytically and creatively inclined
-  * Capable of engaging in endless small talk
-
-##### Personal Interests
-  * Photography
-  * Drawing
-  * Soaking my crystals under a blood moon
 
 ## Install the DATABASE instructions
 
