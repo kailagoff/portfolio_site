@@ -4,7 +4,7 @@
 
 #### _My portfolio website built with Ruby on Rails. 4-27-18_
 
-<kbd><img src="app/assets/images/screenshot.png"></kbd>
+<kbd><img src="app/assets/images/screenshot.gif"></kbd>
 
 ## Description
 _This is my personal portfolio website. It was built with Ruby on Rails. I used Bootstrap and Sass to help style the website. The Ruby gem Devise was used for authentication on the site, and Paperclip was used for image upload. ActiveRecord was utilized in order to store information to a pSQL relational database._
