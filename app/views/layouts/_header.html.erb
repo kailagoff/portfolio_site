@@ -11,26 +11,9 @@
 
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li class="navbar-right"><%= link_to "Photos", photos_path, :style=> 'color:darkslategrey;', id: "nav-element" %></li>
-				 <li class="navbar-right"><%= link_to "Blog", posts_path, :style=> 'color:darkslategrey;', id: "nav-element" %></li>
 				<li class="navbar-right"><%= link_to "Projects", projects_path, :style=> 'color:darkslategrey;', id: "nav-element" %></li>
 				<li class="navbar-right"><%= link_to "Skills", skills_path, :style=> 'color:darkslategrey;', id: "nav-element" %></li>
 				<%= link_to image_tag("kgicondraft.jpg", :size => "70x50"), root_path, :class => 'navbar-right', :style=> 'color:darkslategrey;', id: "nav-element" %>
-
-			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<div id="admin-dash">
-				  <% if current_user && current_user.admin  %>
-				     <p><%= link_to "ADMIN DASHBOARD", '/admin' %></p>
-				   <% end %>
-				</div>
-				<% if user_signed_in? %>
-					<li><%= link_to 'My Account', edit_user_registration_path , :style=> 'color:darkslategrey;' %></li>
-					<li><%= link_to "Sign out", destroy_user_session_path, :style=> 'color:darkslategrey;', :method => :delete %></li>
-				<% else %>
-					<li><%= link_to 'Login', new_user_session_path, :style=> 'color:darkslategrey;' %></li>
-					<li><%= link_to 'Register', new_user_registration_path, :style=> 'color:darkslategrey;'%></li>
-				<% end %>
 			</ul>
 		</div><!--/.nav-collapse -->
 	</div><!--/.container-fluid -->
