@@ -21,20 +21,13 @@ li {
 }
 //navbar
 .navbar {
-  height: 75px;
-  background-image: url("https://images.unsplash.com/photo-1521798864191-bb5fb5a9da66?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a87e9067b97f2380b44a3f7b9e43255b&auto=format&fit=crop&w=800&q=60");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  opacity: .7;
+  height: 60px;
+  background: transparent;
   font-family: 'Open Sans', sans-serif;
   padding-top: 7px;
+  border:none;
+  margin-left: -150px;
 }
-
-
-//skill
 
 #header {
   text-align: left;
@@ -60,27 +53,6 @@ li {
   padding-top: 87px;
 }
 
-#text-col {
-  
-}
-
-#register {
-  text-align: center;
-}
-
-#skills_list {
-  text-align: center;
-}
-
-#skill-show {
-  text-align: center;
-}
-
-.forms {
-  text-align: center;
-  align-items: center;
-}
-
 //home
 #home-body {
   text-align: center;
@@ -89,15 +61,6 @@ li {
 
 #home-image {
   text-align: center;
-}
-
-
-#admin-dash {
-  text-align: center;
-}
-
-#about_me {
-
 }
 
 .img-circular{
@@ -111,44 +74,4 @@ li {
 
 #footer {
   text-align: right;
-}
-
-//posts
-
-#posts_list {
-  text-align: center;
-}
-
-#blog-show {
-  padding-left: 50px;
-}
-
-#comments {
-  text-align: center;
-}
-
-#post_content {
-  padding-right: 50px;
-}
-
-//photos
-
-#wrapper {
-  padding-left: 10%;
-  padding-right: -10%;
-  padding-bottom: 200px;
-}
-
-#photo-show {
-  text-align: center;
-}
-
-//projects_list
-
-#projects_list {
-  text-align: center;
-}
-
-#project-show {
-  text-align: center
 }
