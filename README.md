@@ -2,24 +2,20 @@
  _IN PROGRESS_
 #### _By Kaila Goff_   
 
-#### _My portfolio website built with Ruby on Rails. 4-27-18_
+#### _Portfolio website built with Ruby on Rails. 4-27-18_
 
-<kbd><img src="app/assets/images/screenshot.gif"></kbd>
+<kbd><img src=""></kbd>
 
 ## Description
-_This is my personal portfolio website. It was built with Ruby on Rails. I used Bootstrap and Sass to help style the website. The Ruby gem Devise was used for authentication on the site, and Paperclip was used for image upload. ActiveRecord was utilized in order to store information to a pSQL relational database._
+_This is my personal portfolio website. It was built with Ruby on Rails. I used Bootstrap and Sass to help style the website.  ActiveRecord was utilized in order to store information to a pSQL relational database._
 
-_The website is divided into several different sections. There is an About Me section that displays my story and current interests. There is a skills and project section that is meant to showcase my current coding abilities. There is also a section that displays some of my recent photography as a way of showing my outside interests. I have also included a blog which I hope to populate with relevant and current posts relating to the tech industry._
+_The website is divided into several different sections. There is an About Me section that displays my story and current interests. There is a skills and project section that is meant to showcase my current coding abilities._
 
 ### Portfolio site that includes
 
   * About me section with current interests
   * Skills and Projects
-  * Blog with comments
-  * Photography section
   * Admin CRUD functionality
-  * Devise for Authentication
-  * Paperclip for image upload
   * ActiveRecord Database
 
 ## Install the DATABASE instructions
