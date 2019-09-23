@@ -1,4 +1,34 @@
 <header>
+  <div class="container" align="center">
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="modalButton" data-name="Clicked Modal 1" data-toggle="modal">about</button>
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="modalButton" data-name="Clicked Modal 2" data-toggle="modal">skills</button>
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="modalButton" data-name="Clicked Modal 3" data-toggle="modal" >projects</button>
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="modalButton" data-name="Clicked Modal 4" data-toggle="modal">contact</button>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+         <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Modal Header</h4>
+               </div>
+               <div class="modal-body">
+                  <p>Some text in the modal.</p>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
   <div class="title">
     <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
       <ul class="nav navbar-nav">
@@ -9,6 +39,9 @@
         <li><a href="#contact">contact </a></li>
       </ul>
     </nav>
+
+
+
 
     <div class="row" id="header-row">
       <br><br>
@@ -22,28 +55,35 @@
         <h6>PORTLAND, OR</h6>
       </div>
     </div>
+    <div id="footer">
+      <%= link_to image_tag("kgicondraft.jpg", :size => "90x47") %>
+    </div>
   </div>
 </header>
 
-<main>
-  <div class="container" id="about">
-    <p>this is stuff about me.</p>
-  </div>
-  <br><br>
-  <div class="container" id="skills">
-    <p>OBJECT ORIENTED PROGRAMMING/ PAIR PROGRAMMING</p>
-    <p>RUBY/ RAILS</p>
-    <p>JS / NODEJS/ ANGULAR/ jQUERY</p>
-    <p>BOOTSTRAP/ SASS</p>
-    <p>PostgreSQL</p>
-  </div>
-  <br><br>
-  <div class="container" id="projects">
-    <p>current projects</p>
-  </div>
-  <br><br>
-  <div class="container" id="contact">
-    <p>contact info</p>
-  </div>
-  <br><br>
-</main>
+
+<!-- //modal js -->
+<script type="text/javascript">
+  $(document).ready(function(e) {
+    // Initializing modal.
+    $('#myModal').modal({
+        backdrop: 'static',
+        keyboard: false,
+        show: false,
+    });
+
+    $(document).on("click", ".modalButton", function() {
+
+        var ClickedButton = $(this).data("name");
+
+        // ajax call here
+        // Get the data and append it to a modal body.
+
+
+        $(".modal-body").html("<p>" + ClickedButton + "</p> <p>Some text in the modal.</p> ");
+        $('#myModal').modal('show');
+    });
+
+});
+
+</script>
