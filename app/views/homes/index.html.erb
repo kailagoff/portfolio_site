@@ -1,41 +1,33 @@
-<div  id="header">
-  <div class="row" id="header-row">
-    <div class="column left">
-      <%= image_tag("me.jpg", :class=> "img-circular") %>
+<header>
+  <div class="title">
+    <a href="#skills">skills</a>
+    <a href="#projects">projects</a>
+    <div class="row" id="header-row">
+      <br><br>
+      <div>
+        <%= image_tag("me.jpg", :class=> "img-circular") %>
+      </div>
+      <br>
+      <div class="column right">
+        <h1>KAILA GOFF</h1>
+        <h5>DEVELOPER</h5>
+        <h6>PORTLAND, OR</h6>
+      </div>
     </div>
-    <div class="column right">
-      <h1>KAILA GOFF</h1>
-      <h5>DEVELOPER</h5>
-      <h6>PORTLAND, OR</h6>
-    </div>
-</div>
-<br><br><br><br>
-
-<div class="card"  id="home-body">
-  <div class="card-body">
-    <h4 class="card-title">Inventive, Bold, Thoughtful</h4>
-    <p class="card-text">finding intelligent, simple solutions</p>
   </div>
-</div>
+</header>
 
-<div class="container">
-  <div id="about_me">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra id mi quis porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec purus ligula, fringilla in sagittis sit amet, ornare sit amet arcu. Sed gravida ex lectus, non rutrum libero egestas sit amet. Sed ac mattis nibh. Maecenas in mattis felis, vel sollicitudin arcu. Donec sem justo, eleifend vitae convallis a, dapibus venenatis justo. Quisque eu iaculis purus. Phasellus faucibus massa et ante varius, sodales volutpat lacus ullamcorper. Maecenas id semper nunc. Praesent viverra lorem at mollis mattis. Phasellus laoreet sapien vitae consectetur posuere. Aenean id velit ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus ullamcorper enim nec sapien placerat, quis mollis lectus dignissim.</p>
+<main>
+  <div class="container" id="skills">
+    <p>OBJECT ORIENTED PROGRAMMING/ PAIR PROGRAMMING</p>
+    <p>RUBY/ RAILS</p>
+    <p>JS / NODEJS/ ANGULAR/ jQUERY</p>
+    <p>BOOTSTRAP/ SASS</p>
+    <p>PostgreSQL</p>
   </div>
-</div>
-<br><br>
-<div class="container" id="skills">
-  <p>OBJECT ORIENTED PROGRAMMING/ PAIR PROGRAMMING</p>
-  <p>RUBY/ RAILS</p>
-  <p>JS / NODEJS/ ANGULAR/ jQUERY</p>
-  <p>BOOTSTRAP/ SASS</p>
-  <p>PostgreSQL</p>
-</div>
-<br><br>
-<div class="container">
-  <p id="projects">current projects</p>
-</div>
-<br><br>
-<div id="home-body">
-  <%= link_to image_tag("kgicondraft.jpg", :size => "150x87") %>
-</div>
+  <br><br>
+  <div class="container">
+    <p id="projects">current projects</p>
+  </div>
+  <br><br>
+</main>

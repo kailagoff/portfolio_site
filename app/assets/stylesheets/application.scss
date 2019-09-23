@@ -7,74 +7,56 @@
  /*
  *= require rails_bootstrap_forms
  */
-body {
-  background-image: url("https://i.stack.imgur.com/HCfU2.png");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
-li {
-  list-style: none;
-}
-//navbar
-.navbar {
-  height: 60px;
-  background: transparent;
-  font-family: 'Open Sans', sans-serif;
-  padding-top: 7px;
-  border:none;
-  margin-left: -150px;
-}
 
-#header {
-  text-align: left;
-  padding-left: 50px;
-  background-image: url("https://images.unsplash.com/photo-1510267519236-48581949f65a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=10c553182f4cc69fb98bcbf02f54d28b&auto=format&fit=crop&w=1350&q=80");
-  background-position: top;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+ @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900);
+
+ body {
+   font-family: 'Source Sans Pro', sans-serif;
+ }
+
+ a {
   color: black;
-  text-shadow: white 2px 2px 2px;
-  background-repeat: no-repeat;
-  height: 370px;
-  margin-top: -150px;
-  letter-spacing: 2px;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: 300;
 }
 
-#header-row {
-  padding-top: 87px;
-}
+ header {
+   background:
+     linear-gradient(
+       rgba(0, 0, 0, 0.5),
+       rgba(0, 0, 0, 0.5)
+     ),
+     url(https://images.unsplash.com/photo-1467087027365-0850cec5d188?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60);
+   background-size: cover;
+   height: 100vh;
+ }
 
-.column {
-  float: left;
-  padding: 10px;
-}
+ .title {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: white;
+   text-align: center;
+ }
+ h1 {
+   text-transform: uppercase;
+   margin: 0;
+   font-size: 3rem;
+   white-space: nowrap;
+ }
+ h2 {
+   font-size: 2rem;
+ }
+ p {
+   margin: 0;
+   font-size: 1.3rem;
+ }
 
-.left {
-  width: 25%;
-}
+ main {
+   max-width: 500px;
+   margin: 20px auto;
+ }
 
-.right {
-  width: 75%;
-}
-
-//home
-#home-body {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-}
-
-#home-image {
-  text-align: center;
-}
 
 .img-circular{
  width: 200px;
@@ -86,5 +68,5 @@ li {
 }
 
 #footer {
-  text-align: right;
+  text-align: center;
 }
