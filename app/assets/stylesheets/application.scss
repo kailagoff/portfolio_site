@@ -12,11 +12,6 @@
    font-family: 'Source Sans Pro', sans-serif;
  }
 
- a {
-  color: white;
-  text-transform: uppercase;
-}
-
  header {
    background:
      linear-gradient(
@@ -56,9 +51,18 @@
   text-align: center;
 }
 
-
 // button
 
+button {
+  border: none;
+}
+
+button:focus {
+    outline: none;
+}
+
 .modalButton {
-  background-color: black;
+  background-color: #383838;
+  text-transform: uppercase;
+  padding: 2vh;
 }
