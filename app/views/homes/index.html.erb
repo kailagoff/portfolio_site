@@ -1,13 +1,5 @@
 <header>
   <div class="container" align="center">
-      <!-- Trigger the modal with a button -->
-      <button type="button" class="modalButton" data-name="Clicked Modal 1" data-toggle="modal">about</button>
-      <!-- Trigger the modal with a button -->
-      <button type="button" class="modalButton" data-name="Clicked Modal 2" data-toggle="modal">skills</button>
-      <!-- Trigger the modal with a button -->
-      <button type="button" class="modalButton" data-name="Clicked Modal 3" data-toggle="modal" >projects</button>
-      <!-- Trigger the modal with a button -->
-      <button type="button" class="modalButton" data-name="Clicked Modal 4" data-toggle="modal">contact</button>
       <!-- Modal -->
       <div class="modal fade" id="myModal" role="dialog">
          <div class="modal-dialog">
@@ -31,13 +23,13 @@
 
   <div class="title">
     <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
-      <ul class="nav navbar-nav">
+      <div class="nav navbar-nav">
         <li class="active"></li>
-        <li><a href="#about">about </a></li>
-        <li><a href="#skills">skills </a></li>
-        <li><a href="#projects">projects </a></li>
-        <li><a href="#contact">contact </a></li>
-      </ul>
+        <li><button type="button" class="modalButton" data-name="Clicked Modal 1" data-toggle="modal">about</button></li>
+        <li><button type="button" class="modalButton" data-name="Clicked Modal 2" data-toggle="modal">skills</button></li>
+        <li><button type="button" class="modalButton" data-name="Clicked Modal 3" data-toggle="modal" >projects</button></li>
+        <li><button type="button" class="modalButton" data-name="Clicked Modal 4" data-toggle="modal">contact</button></li>
+      <div/>
     </nav>
 
 
@@ -56,34 +48,7 @@
       </div>
     </div>
     <div id="footer">
-      <%= link_to image_tag("kgicondraft.jpg", :size => "90x47") %>
+      <%= image_tag("kgicondraft.jpg", :size => "90x47") %>
     </div>
   </div>
 </header>
-
-
-<!-- //modal js -->
-<script type="text/javascript">
-  $(document).ready(function(e) {
-    // Initializing modal.
-    $('#myModal').modal({
-        backdrop: 'static',
-        keyboard: false,
-        show: false,
-    });
-
-    $(document).on("click", ".modalButton", function() {
-
-        var ClickedButton = $(this).data("name");
-
-        // ajax call here
-        // Get the data and append it to a modal body.
-
-
-        $(".modal-body").html("<p>" + ClickedButton + "</p> <p>Some text in the modal.</p> ");
-        $('#myModal').modal('show');
-    });
-
-});
-
-</script>

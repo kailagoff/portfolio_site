@@ -15,3 +15,25 @@
 //= require turbolinks
 //= require_tree .
 //= require jquery
+//= require jquery_ujs
+
+$(document).ready(function(e) {
+  // Initializing modal.
+  $('#myModal').modal({
+      backdrop: 'static',
+      keyboard: false,
+      show: false,
+  });
+
+  $(document).on("click", ".modalButton", function() {
+
+      var ClickedButton = $(this).data("name");
+
+      // ajax call here
+      // Get the data and append it to a modal body.
+
+      $(".modal-body").html("<p>" + ClickedButton + "</p> <p>Some text in the modal.</p> ");
+      $('#myModal').modal('show');
+  });
+
+});

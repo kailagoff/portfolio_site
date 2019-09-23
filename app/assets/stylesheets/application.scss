@@ -8,9 +8,6 @@
  *= require rails_bootstrap_forms
  */
 
-
- @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900);
-
  body {
    font-family: 'Source Sans Pro', sans-serif;
  }
@@ -40,20 +37,6 @@
    text-align: center;
  }
 
- h1 {
-   text-transform: uppercase;
-   margin: 0;
-   font-size: 3rem;
-   white-space: nowrap;
- }
- h2 {
-   font-size: 2rem;
- }
- p {
-   margin: 0;
-   font-size: 1.3rem;
- }
-
  main {
    max-width: 500px;
    margin: 20px auto;
@@ -71,4 +54,11 @@
 
 #footer {
   text-align: center;
+}
+
+
+// button
+
+.modalButton {
+  background-color: black;
 }
