@@ -9,7 +9,7 @@
  */
 
  body {
-   font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Libre Baskerville', serif !important;
  }
 
  header {
@@ -52,11 +52,6 @@
 }
 
 // button
-
-button {
-  border: none;
-}
-
 button:focus {
     outline: none;
 }
@@ -65,4 +60,26 @@ button:focus {
   background-color: #383838;
   text-transform: uppercase;
   padding: 2vh;
+  border-radius: .2vh;
+  border: none;
+  font-size: 2vh;
+}
+
+//modal
+
+.modal-header {
+  background-color: #383838;
+  color:white;
+  border-bottom: 0 none !important;
+}
+
+.modal-body {
+  background-color: #383838;
+  color:white;
+}
+
+.modal-footer {
+  background-color: #383838;
+  color:white;
+  border-top: 0 none !important;
 }
