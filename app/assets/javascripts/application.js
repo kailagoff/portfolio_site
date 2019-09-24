@@ -26,10 +26,9 @@ $(document).ready(function(e) {
   });
 
   $(document).on("click", ".modalButton", function() {
+      var clickedButton = $(this).data("name");
 
-      var ClickedButton = $(this).data("name");
-
-      $(".modal-body").html("<p>" + ClickedButton + "</p>");
+      $(".modal-body").html("<p>" + clickedButton + "</p>");
       $('#myModal').modal('show');
   });
 
