@@ -12,6 +12,10 @@
   font-family: 'Libre Baskerville', serif !important;
  }
 
+ a, a:hover, a:active, a:visited {
+   color: white !important;
+ }
+
  header {
    background:
      linear-gradient(
@@ -47,7 +51,7 @@
  -moz-border-radius: 100px;
 }
 
-#footer {
+#footer-img {
   text-align: center;
 }
 
@@ -83,6 +87,5 @@ button:focus {
 .modal-footer {
   background-color: #383838;
   color:white;
-  border-top: 0 none !important;
   font-family: 'Source Sans Pro', sans-serif;
 }
