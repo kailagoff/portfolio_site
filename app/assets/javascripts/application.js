@@ -29,10 +29,7 @@ $(document).ready(function(e) {
 
       var ClickedButton = $(this).data("name");
 
-      // ajax call here
-      // Get the data and append it to a modal body.
-
-      $(".modal-body").html("<p>" + ClickedButton + "</p> <p>Some text in the modal.</p> ");
+      $(".modal-body").html("<p>" + ClickedButton + "</p>");
       $('#myModal').modal('show');
   });
 

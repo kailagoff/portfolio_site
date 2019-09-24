@@ -18,7 +18,7 @@
        rgba(0, 0, 0, 0.5),
        rgba(0, 0, 0, 0.5)
      ),
-     url(https://images.unsplash.com/photo-1467087027365-0850cec5d188?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60);
+     url(https://images.unsplash.com/photo-1530563937443-1f02f662fa5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60);
    background-size: cover;
    height: 100vh;
  }
@@ -71,15 +71,18 @@ button:focus {
   background-color: #383838;
   color:white;
   border-bottom: 0 none !important;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .modal-body {
   background-color: #383838;
   color:white;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .modal-footer {
   background-color: #383838;
   color:white;
   border-top: 0 none !important;
+  font-family: 'Source Sans Pro', sans-serif;
 }

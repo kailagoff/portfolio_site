@@ -7,10 +7,9 @@
             <div class="modal-content">
                <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Modal Header</h4>
+                  <h4 class="modal-title"></h4>
                </div>
                <div class="modal-body">
-                  <p>Some text in the modal.</p>
                </div>
                <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -25,10 +24,10 @@
     <nav class="navbar navbar-transparent" data-spy="affix" data-offset-top="197">
       <div class="nav navbar-nav">
         <li class="active"></li>
-        <li><button type="button" class="modalButton" data-name="Clicked Modal 1" data-toggle="modal">about</button></li>
-        <li><button type="button" class="modalButton" data-name="Clicked Modal 2" data-toggle="modal">skills</button></li>
-        <li><button type="button" class="modalButton" data-name="Clicked Modal 3" data-toggle="modal" >projects</button></li>
-        <li><button type="button" class="modalButton" data-name="Clicked Modal 4" data-toggle="modal">contact</button></li>
+        <li><button type="button" class="modalButton" data-name="<%= render :partial => "homes/about" %>" data-toggle="modal">about</button> </li>
+        <li><button type="button" class="modalButton" data-name="<%= render :partial => "homes/skills" %>" data-toggle="modal">skills</button></li>
+        <li><button type="button" class="modalButton" data-name="<%= render :partial => "homes/project" %>" data-toggle="modal" >projects</button></li>
+        <li><button type="button" class="modalButton" data-name="<%= render :partial => "homes/contact" %>" data-toggle="modal">contact</button></li>
       <div/>
     </nav>
 
@@ -38,7 +37,7 @@
     <div class="row" id="header-row">
       <br><br>
       <div>
-        <%= image_tag("me.jpg", :class=> "img-circular") %>
+        <%= image_tag("me.png", :class=> "img-circular") %>
       </div>
       <br>
       <div class="column right">
