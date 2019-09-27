@@ -14,7 +14,6 @@
 //= require activestorage
 //= require_tree .
 //= require jquery
-//= require jquery_ujs
 //= require turbolinks
 
 $(document).ready(function(e) {
@@ -26,7 +25,6 @@ $(document).ready(function(e) {
   });
 
   $(document).on("click", ".modalButton", function() {
-    jQuery.noConflict();
       var clickedButton = $(this).data("name");
 
       $(".modal-body").html("<p>" + clickedButton + "</p>");
