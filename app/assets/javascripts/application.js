@@ -26,6 +26,7 @@ $(document).ready(function(e) {
   });
 
   $(document).on("click", ".modalButton", function() {
+    jQuery.noConflict();
       var clickedButton = $(this).data("name");
 
       $(".modal-body").html("<p>" + clickedButton + "</p>");
