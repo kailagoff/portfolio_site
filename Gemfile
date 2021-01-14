@@ -25,7 +25,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'paperclip'
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'devise', '~> 4.4.3'
-gem 'rails_admin', '~> 1.3'
+gem 'rails_admin', '~> 1.4'
 source 'https://rails-assets.org' do
   gem 'rails-assets-jquery', '2.1.1'
 end
